@@ -10,10 +10,10 @@ namespace Sequence
             int stopCicle = 96;
             int stepCicle = 7;
 
-            do
+            for(int i=beginningSequnce;i<=stopCicle;i+=stepCicle)
             {
-                Console.WriteLine(beginningSequnce);
-            } while ((beginningSequnce=beginningSequnce+stepCicle)<=stopCicle);
+                Console.WriteLine(i);
+            }
         }
     }
 }
