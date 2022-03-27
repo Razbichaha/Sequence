@@ -7,14 +7,13 @@ namespace Sequence
         static void Main(string[] args)
         {
             int beginningSequnce=5;
+            int stopCicle = 96;
+            int stepCicle = 7;
 
-            for(int i = 0; i < 96; i++)
+            do
             {
-                i = beginningSequnce;
                 Console.WriteLine(beginningSequnce);
-                Console.ReadLine();
-                beginningSequnce = beginningSequnce + 7;
-            }
+            } while ((beginningSequnce=beginningSequnce+stepCicle)<=stopCicle);
         }
     }
 }
